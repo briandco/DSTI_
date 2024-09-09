@@ -1,0 +1,21 @@
+[workspace]
+
+members = ["dsti-bpf/*", "dsti-common", "dsti-agent", "xtask"]
+exclude = ["dsti-bpf/target"]
+resolver = "2"
+
+[profile.dev]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false
+lto = true
+panic = "abort"
+incremental = false
+codegen-units = 1
+rpath = false
+
+[profile.release]
+lto = true
+panic = "abort"
+codegen-units = 1

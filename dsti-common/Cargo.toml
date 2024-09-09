@@ -1,0 +1,16 @@
+[package]
+name = "dsti-common"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya = { git = "https://github.com/aya-rs/aya", optional = true }
+# serde = { version = "1.0.188", default-features = false, features = ["derive"] }
+# postcard = "1.0.8"
+
+[features]
+default = []
+user = [ "aya" ]
+
+[lib]
+path = "src/lib.rs"

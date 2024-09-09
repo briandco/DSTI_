@@ -1,0 +1,6 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./dsti-bpf/proc/Cargo.toml",
+        "./dsti-agent/Cargo.toml"
+    ]
+}

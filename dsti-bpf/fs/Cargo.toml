@@ -1,0 +1,15 @@
+[package]
+name = "file-sys-ebpf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aya-ebpf = { git = "https://github.com/aya-rs/aya" }
+aya-log-ebpf = { git = "https://github.com/aya-rs/aya" }
+dsti-common = { path = "../../dsti-common" }
+
+[[bin]]
+name = "file-sys"
+path = "src/main.rs"
+
+

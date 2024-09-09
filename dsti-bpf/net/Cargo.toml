@@ -1,0 +1,21 @@
+[package]
+name = "dsti-net-bpf"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "dsti-net-bpf"
+path = "src/main.rs"
+
+[dependencies]
+aya-ebpf = { git = "https://github.com/aya-rs/aya" }
+aya-log-ebpf = { git = "https://github.com/aya-rs/aya" }
+dsti-common = { path = "../../dsti-common" }
+network-types = "0.0.5"
+
+
+
+
+
